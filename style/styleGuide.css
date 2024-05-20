@@ -42,6 +42,8 @@
   width: 100%;
 }
 
+
+
 .bgGrey-700 {
   background: #363434;
 }
@@ -182,6 +184,18 @@
   opacity: 100%;
 }
 
+/* desktop */
+
+@media only screen and (min-width: 431px) {
+
+  .search.active {
+    width: 80%;
+  }
+
+  
+    
+  }
+
 /* --------------------------------- filter --------------------------------- */
 
 .filter {
@@ -189,6 +203,8 @@
   padding: 0 12px;
   border-radius: 12px;
   height: 50px;
+
+  cursor: pointer;
 }
 
 .filter.active {
@@ -242,6 +258,18 @@
 .filterOverflow.active {
   height: 116px;
 }
+
+/* desktop */
+
+@media only screen and (min-width: 431px) {
+
+ 
+
+  .filter.active {
+    display: flex;
+  }
+    
+  }
 
 /* --------------------------------- Navbar --------------------------------- */
 
@@ -314,6 +342,57 @@ nav.active {
 
 .juSpace {
   justify-content: space-between;
+
+  
+}
+
+a p:hover{
+  color: #2435E3!important;
+}
+
+a img:hover{
+  fill: #2435E3!important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+/* destop */
+
+@media only screen and (min-width: 431px) {
+  body {
+    display: flex;
+  }
+  
+  nav {
+    position: relative;
+    left: 0px;
+    width: 368px;
+    height: auto;
+
+    min-height: 100vh;
+
+    
+  }
+
+
+
+  .menuNav {
+    position: fixed;
+    bottom: 64px;
+    left: 64px;
+  }
+
+  
+
+  .burgerButton {
+    display: none;
+  }
+
+  .logoTexteTurboTickets {
+    width: 100%;
+  }
 }
 
 /* ---------------------------------- card ---------------------------------- */
@@ -322,6 +401,14 @@ nav.active {
   background: #dde1e5;
   overflow: hidden;
   border-radius: 12px;
+}
+
+@media only screen and (min-width: 431px) {
+  
+  .card {
+    
+  }
+
 }
 
 
@@ -396,6 +483,9 @@ nav.active {
 
 
 }
+
+
+
 
 /* ------------------------------- pagination ------------------------------- */
 
