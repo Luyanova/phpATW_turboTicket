@@ -91,6 +91,8 @@ button {
     #2435e3 86.9%,
     #000d96 100%
   );
+
+  cursor: pointer;
 }
 
 .secondaryButton {

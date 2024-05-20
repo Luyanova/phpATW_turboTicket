@@ -403,13 +403,7 @@ a img:hover{
   border-radius: 12px;
 }
 
-@media only screen and (min-width: 431px) {
-  
-  .card {
-    
-  }
 
-}
 
 
 /* ---------------------------------- list ---------------------------------- */
@@ -484,8 +478,24 @@ a img:hover{
 
 }
 
+/* desktop */
 
 
+@media only screen and (min-width: 431px) {
+  
+  .containerNotification {
+    width: 100%;
+  }
+
+  .notification1 {
+    left: 40%;
+  }
+
+  .notification2 {
+    left: 40%;
+  }
+
+}
 
 /* ------------------------------- pagination ------------------------------- */
 
