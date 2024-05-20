@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/home.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <title>All registrations</title>
+  </head>
+  <body>
+
+<!-- ---------------------Navbar-------------------------------------------------- -->
+
+
+<nav id="navbar">
+  <div class="menuNav flexCol gap-48">
+    <a href="home.html"><img src="/assets/logoTexteTurboTickets.svg" alt="" srcset="" class="logoTexteTurboTickets"></a>
+  <div class="listNav flexCol gap-16">
+    <a href="profile.html"><p style="color: #DDE1E5">Profile</p></a>
+    <a href="participation.html"><p style="color: #DDE1E5">My participation</p></a>
+    <a href="askForAssistance.html"><p style="color: #DDE1E5">Ask for assistance</p></a>
+
+    <!-- for admin only -->
+
+    <a href="allUsers.html"><p style="color: #5B68E8">All Users</p></a>
+    <a href="allUsersRequiringAssistance.html"><p style="color: #5B68E8">Users who need help</p></a>
+    <a href="createEvent.html"><p style="color: #5B68E8">Create event</p></a>
+
+  </div>
+
+  <div class="flex gap-8">
+    <img  src="/assets/iconExit.svg" alt="">
+    <p style="color: #DDE1E5">Logout</p>
+  </div>
+
+  </div>
+</nav>
+
+
+
+<div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+  <img class="iconBurger active" src="/assets/iconBurger.svg" alt="icon" id="iconBurger">
+  <img class="iconCross" src="/assets/iconCross.svg" alt="icon" id="iconCross">
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+    <div class="container">
+      <div class="wrap gap-16">
+
+
+
+        <!-- -------------------------------------------Head---------------------------- -->
+        <div class="flexCol gap-8 pTop-64">
+          <h3>All registrations</h3>
+
+        </div>
+        
+        <div class="w100 bgGrey-700" style="height: 2px"></div>
+        <div>
+        <button type="submit">Export all registrations</button>
+    </div>
+
+<!-- -----------------------------------Card------------------------------------ -->
+
+<ul>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User1_name <button class="secondaryButton" type="submit">Delete</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User2_name <button class="secondaryButton" type="submit">Delete</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User3_name <button class="secondaryButton" type="submit">Delete</button></li>
+</ul>
+
+
+<!-- <div class="errorNoCard flex juCenter alCenter">
+  <h4 style="color: #83898D;">No user</h4>
+</div> -->
+
+<!-- ----------------------------------------------Pagination------------------------- -->
+
+
+<!-- <div class="pagination">
+            
+  <button class="btnPagination1" onclick="backBtn()"><img src="assets/iconArrow.svg"></button>
+  <ul class="paginationList">
+      <li class="linkPage active" onclick="activeLink()" value="1">1</li>
+      <li class="linkPage" value="2" onclick="activeLink()">2</li>
+      <li class="linkPage" value="3" onclick="activeLink()">3</li>
+      
+  </ul>
+  <button class="btnPagination2" onclick="nextBtn()"><img src="assets/iconArrow.svg"></button>
+
+</div> -->
+
+<!-- --------------------------- end pagination ---------------------------- -->
+
+        
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="javascript/searchbar.js"></script>
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/filter.js"></script>
+  </body>
+</html>

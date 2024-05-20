@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/normalize.css" />
     <link rel="stylesheet" href="/style/styleGuide.css" />
 
-    <title>Home</title>
+    <title>All users</title>
   </head>
   <body>
 
@@ -59,8 +59,8 @@
 
         <!-- -------------------------------------------Head---------------------------- -->
         <div class="flexCol gap-8 pTop-64">
-          <h3>Welcome</h3>
-          <h3>$User</h3>
+          <h3>All users</h3>
+
         </div>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -88,85 +88,28 @@
                 </span>
             </div>
         
-           <div class="filter flex gap-8 alCenter" id="filter">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M9.35889 21.6665L9.83323 23.0896L9.35889 21.6665ZM15.2018 19.7189L15.6761 21.1419L15.6761 21.1419L15.2018 19.7189ZM21.5438 6.2451L20.4832 5.18444L21.5438 6.2451ZM7.77128 11.5274L8.83194 10.4668L7.77128 11.5274ZM3.6694 3.5H20.3634V0.5H3.6694V3.5ZM3.5 5.06466V3.6694H0.5V5.06466H3.5ZM8.83194 10.4668L3.54962 5.18444L1.4283 7.30576L6.71062 12.5881L8.83194 10.4668ZM6.76024 12.7079V20.8747H9.76024V12.7079H6.76024ZM6.76024 20.8747C6.76024 22.4683 8.32145 23.5935 9.83323 23.0896L8.88455 20.2435C9.31535 20.0999 9.76024 20.4206 9.76024 20.8747H6.76024ZM9.83323 23.0896L15.6761 21.1419L14.7274 18.2959L8.88455 20.2435L9.83323 23.0896ZM15.6761 21.1419C16.6295 20.8242 17.2725 19.932 17.2725 18.9271H14.2725C14.2725 18.6407 14.4558 18.3865 14.7274 18.2959L15.6761 21.1419ZM17.2725 18.9271V12.7079H14.2725V18.9271H17.2725ZM20.4832 5.18444L15.2008 10.4668L17.3221 12.5881L22.6045 7.30576L20.4832 5.18444ZM20.5328 3.6694V5.06466H23.5328V3.6694H20.5328ZM22.6045 7.30576C23.1988 6.71138 23.5328 5.90523 23.5328 5.06466H20.5328C20.5328 5.10958 20.5149 5.15267 20.4832 5.18444L22.6045 7.30576ZM17.2725 12.7079C17.2725 12.6629 17.2904 12.6199 17.3221 12.5881L15.2008 10.4668C14.6064 11.0611 14.2725 11.8673 14.2725 12.7079H17.2725ZM6.71062 12.5881C6.74239 12.6199 6.76024 12.6629 6.76024 12.7079H9.76024C9.76024 11.8673 9.42632 11.0611 8.83194 10.4668L6.71062 12.5881ZM0.5 5.06466C0.5 5.90523 0.83392 6.71138 1.4283 7.30576L3.54962 5.18444C3.51785 5.15267 3.5 5.10958 3.5 5.06466H0.5ZM20.3634 3.5C20.4569 3.5 20.5328 3.57584 20.5328 3.6694H23.5328C23.5328 1.91899 22.1138 0.5 20.3634 0.5V3.5ZM3.6694 0.5C1.91899 0.5 0.5 1.91899 0.5 3.6694H3.5C3.5 3.57584 3.57584 3.5 3.6694 3.5V0.5Z" fill="#83898D"/>
-                </svg>
-                <p>Filter</p>
-           </div> 
+        
 
-           <div class="filterButton flex gap-16">
-
-                <div class="filter flex gap-8 alCenter" id="carButton">
-                  <img class="iconCar" src="/assets/iconCar.svg" alt="icon car">
-                  <p>Car</p>
-                </div> 
-
-                <div class="filter flex gap-8 alCenter" id="kartButton">
-                  <img class="iconKart" src="/assets/iconKart.svg" alt="icon Kart">
-                  <p>Kart</p>
-                </div> 
-                  
-           </div>
+           
 
         </div>
 
 <!-- -----------------------------------Card------------------------------------ -->
 
-<div class="card gap-16">
-  <img src="/assets/imageCar.png" alt="">
-  <div class="flexCol p-24 gap-16">
-      <div>
-      <h4>$Title</h4>
-      <p class="light">$Date</p>
-      </div>
-      <p>$Type(KartOrCar)</p>
-      <div style="width: 100%; height: 2px; background-color: #363434; margin: 16px 0;"></div>
-      <div>
-      <button type="submit">View More</button>    
-  </div>
-  </div>
-</div>
+<ul>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User1_name <button type="submit">View more</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User2_name <button type="submit">View more</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User3_name <button type="submit">View more</button></li>
+</ul>
 
-<div class="card gap-16">
-  <img src="/assets/imageCar.png" alt="">
-  <div class="flexCol p-24 gap-16">
-      <div>
-      <h4>$Title</h4>
-      <p class="light">$Date</p>
-      </div>
-      <p>$Type(KartOrCar)</p>
-      <div style="width: 100%; height: 2px; background-color: #363434; margin: 16px 0;"></div>
-      <div>
-      <button type="submit">View More</button>    
-  </div>
-  </div>
-</div>
-
-<div class="card gap-16">
-  <img src="/assets/imageCar.png" alt="">
-  <div class="flexCol p-24 gap-16">
-      <div>
-      <h4>$Title</h4>
-      <p class="light">$Date</p>
-      </div>
-      <p>$Type(KartOrCar)</p>
-      <div style="width: 100%; height: 2px; background-color: #363434; margin: 16px 0;"></div>
-      <div>
-      <button type="submit">View More</button>    
-  </div>
-  </div>
-</div>
 
 <!-- <div class="errorNoCard flex juCenter alCenter">
-  <h4 style="color: #83898D;">No event</h4>
+  <h4 style="color: #83898D;">No user</h4>
 </div> -->
 
 <!-- ----------------------------------------------Pagination------------------------- -->
 
-
-
-<div class="pagination">
+<!-- <div class="pagination">
             
   <button class="btnPagination1" onclick="backBtn()"><img src="assets/iconArrow.svg"></button>
   <ul class="paginationList">
@@ -177,9 +120,11 @@
   </ul>
   <button class="btnPagination2" onclick="nextBtn()"><img src="assets/iconArrow.svg"></button>
 
-</div>
+</div> -->
 
 <!-- --------------------------- end pagination ---------------------------- -->
+
+
         
 
 
@@ -197,7 +142,7 @@
 
 
 
-    <script src="javascript/pagination.js"></script>
+
     <script src="javascript/searchbar.js"></script>
     <script src="javascript/navbar.js"></script>
     <script src="javascript/filter.js"></script>

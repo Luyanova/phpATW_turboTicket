@@ -1,0 +1,465 @@
+/* ---------------------------- frequent class ---------------------------- */
+
+.gap-48 {
+  gap: 48px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.pTop-64 {
+  padding-top: 64px;
+}
+
+.logoTurboTicketsSm {
+  width: 48px;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.bgGrey-700 {
+  background: #363434;
+}
+
+.bgGrey-100 {
+  background: var(--Grey-Grey-100, #DDE1E5);
+}
+
+.alCenter {
+  align-items: center;
+}
+
+.juCenter {
+  justify-content: center;
+}
+
+.p-24 {
+  padding: 24px;
+} 
+
+.borderRadius-12 {
+  border-radius: 12px;
+}
+
+/* ------------------------------- search bar ------------------------------- */
+
+.search {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  border-radius: 12px;
+  transition: 0.5s;
+
+  background: #363434;
+
+  overflow: hidden;
+}
+
+.search.active {
+  width: 100%;
+}
+
+.iconSearch {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+
+  background: #363434;
+
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  cursor: pointer;
+}
+
+.iconSearch::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #83898d;
+  border-radius: 50%;
+
+  transform: translate(-4px, -4px);
+}
+
+.iconSearch::after {
+  content: "";
+  width: 3px;
+  height: 12px;
+  background: #83898d;
+  transform: translate(6px, 6px) rotate(315deg);
+}
+
+.inputSearchbar {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputSearch {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+
+  border: none;
+  outline: none;
+
+  color: #83898d;
+
+  /* p */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.64px;
+  padding-top: 14px;
+
+  background: none;
+}
+
+.inputSearch::placeholder {
+  color: #83898d;
+}
+
+.clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+
+  transition: 0.5s;
+}
+
+.clear.active {
+  opacity: 100%;
+}
+
+/* --------------------------------- filter --------------------------------- */
+
+.filter {
+  background: #363434;
+  padding: 0 12px;
+  border-radius: 12px;
+  height: 50px;
+}
+
+.filter.active {
+  display: none;
+}
+
+.filter.active2 {
+  background: linear-gradient(
+    180deg,
+    #4654df 0%,
+    #2435e3 25%,
+    #2435e3 86.9%,
+    #000d96 100%
+  );
+}
+
+.filter.active2 p {
+  color: #f1f4f6;
+}
+
+/* trouver pourquoi ça marche pas ici */
+
+.filter.active2 svg {
+  fill: #f1f4f6;
+}
+
+.filter p {
+  color: #83898d;
+}
+
+.filter svg path {
+  width: 32px;
+}
+
+.filterButton {
+  position: absolute;
+
+  width: 334px;
+  height: 50px;
+  top: 64px;
+  left: 0;
+}
+
+.filterOverflow {
+  height: 50px;
+  overflow: hidden;
+
+  transition: 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.filterOverflow.active {
+  height: 116px;
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+
+nav {
+  position: fixed;
+
+  left: -268px;
+  height: 100%;
+  width: 268px;
+
+  background: #191818;
+
+  z-index: 10000;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 92px 48px;
+  
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav.active {
+  left: 0px;
+}
+
+
+.logoTexteTurboTickets {
+  width: 85%;
+  height: auto;
+}
+
+.burgerButton {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  left: 333px;
+  top: 800px;
+
+  background: #c91414;
+
+  z-index: 1000;
+}
+
+.iconBurger {
+  width: 75%;
+  height: auto;
+
+  
+}
+
+
+
+.iconBurger {
+  display: none;
+}
+
+.iconBurger.active {
+  display: block;
+}
+
+.iconCross {
+  display: none;
+}
+
+.iconCross.active {
+  display: block;
+}
+
+.juSpace {
+  justify-content: space-between;
+}
+
+/* ---------------------------------- card ---------------------------------- */
+
+.card {
+  background: #dde1e5;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+/* ---------------------------------- list ---------------------------------- */
+
+.list {
+  border-radius: 8px;
+  padding: 8px 4px;
+  margin: 8px 0;
+}
+
+/* ------------------------------ notification ------------------------------ */
+
+.containerNotification {
+  display: none;
+  position: fixed;
+
+  width: 100vh;
+  height: 100vh;
+
+  background: black;
+
+  opacity: 50%;
+
+  z-index: 100000;
+}
+
+.containerNotification.active {
+  display: block;
+
+}
+
+
+.notification1 {
+  display: none;
+  width: 334px;
+    position: fixed;
+    top: 40%;
+    left: 48px;
+    background: #F1F4F6;
+
+    z-index: 1000000;
+
+
+}
+
+.notification1.active {
+  display: flex;
+  
+
+
+}
+
+.notification2 {
+
+  display: none;
+  width: 334px;
+    position: fixed;
+    top: 40%;
+    left: 48px;
+    background: #F1F4F6;
+
+    z-index: 1000000;
+
+
+}
+
+.notification2.active {
+
+  display: flex;
+  
+
+
+}
+
+/* ------------------------------- pagination ------------------------------- */
+
+.pagination {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  color: #83898D;
+}
+
+.paginationList {
+  
+
+  display: flex;
+  align-items: center;
+
+}
+
+.linkPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.linkPage.active {
+  color: #191818;
+}
+
+
+.btnPagination1, .btnPagination2 {
+  display: inline-flex;
+  align-items: center;
+
+   /* p.light */
+   font-family: Inter;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 300;
+   
+   letter-spacing: 0.64px;
+
+   background: transparent;
+
+   border: none;
+   outline: none;
+   cursor: pointer;
+
+}
+
+
+
+.btnPagination2 img {
+  transform: rotate(180deg);
+}

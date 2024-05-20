@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/eventDetails.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <title>Event Details</title>
+  </head>
+  <body>
+    <!-- ---------------------Navbar-------------------------------------------------- -->
+
+    <nav id="navbar">
+      <div class="menuNav flexCol gap-48">
+        <a href="home.html"
+          ><img
+            src="/assets/logoTexteTurboTickets.svg"
+            alt=""
+            srcset=""
+            class="logoTexteTurboTickets"
+        /></a>
+        <div class="listNav flexCol gap-16">
+          <a href=""><p style="color: #dde1e5">Profile</p></a>
+          <a href=""><p style="color: #dde1e5">My participation</p></a>
+          <a href=""><p style="color: #dde1e5">Ask for assistance</p></a>
+
+          <!-- for admin only -->
+
+          <a href=""><p style="color: #5b68e8">All Users</p></a>
+          <a href=""><p style="color: #5b68e8">Users who need help</p></a>
+          <a href=""><p style="color: #5b68e8">Create event</p></a>
+        </div>
+
+        <div class="flex gap-8">
+          <img src="/assets/iconExit.svg" alt="" />
+          <p style="color: #dde1e5">Logout</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+      <img
+        class="iconBurger active"
+        src="/assets/iconBurger.svg"
+        alt="icon"
+        id="iconBurger"
+      />
+      <img
+        class="iconCross"
+        src="/assets/iconCross.svg"
+        alt="icon"
+        id="iconCross"
+      />
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="container">
+      <div class="wrap gap-16">
+        
+        
+        
+        <!-- -------------------------------------------content---------------------------- -->
+        <div class="imgDetailsContainer">
+        <img class="imgDetails " src="/assets/imageCar.png" alt="" />
+        </div>
+        <div class="flexCol gap-16">
+            
+            <div class="flexCol">
+            <h4>$Title</h4>
+            <p class="light">Last registration date : $LastDate</p>
+            <p class="light">Event date : $EventDate</p>
+            </div>
+
+            <p>$currentNbPart / $ maxNbPart </p>
+
+            <div style=" width: 100%;height: 2px;background-color: #363434;margin: 16px 0;"></div>
+
+
+            <p>$Type(KartOrCar)</p>
+            <p class="light">$eventDescription</p>
+          
+          <div>
+
+            <!-- if the USER is NOT register  -->
+
+            <a href="home.html"><button type="submit">Register</button></a>
+
+            <!-- if the USER IS register  -->
+
+            <!-- <button class="secondaryButton" type="submit">Unegister</button> -->
+
+            <!-- if the LAST REGISTRATION DATE is OVER -->
+
+            <!-- <h4>Last registration date passed</h4> -->
+
+            <!-- if it's an ADMIN  -->
+
+            <!-- <div class="flex gap-16">
+                <button type="submit">Modify</button>
+                <button type="submit">View all registration</button>
+            </div> -->
+
+            <!-- if it's an ADMIN and THE LAST DATE FOR MODIFICATION IS PAST (idl if we will implement this fonctionality)  -->
+
+            <!-- <div class="flex gap-16">
+                
+                <button type="submit">View all registration</button>
+            </div> -->
+
+            
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/navbar.js"></script>
+    
+  </body>
+</html>
+ 

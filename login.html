@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/login.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log In Turbo Ticket</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="wrap gap-48">
+      <h3>Log In</h3>
+
+      <form action="/login" method="post" class="flexCol w100 gap-32">
+        <div class="inputFlex">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="input-field" name="email" placeholder="exemple@email.com" required />
+          <!-- <?php
+                if (isset($errorMessage)) {
+                    echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                }
+            ?> -->
+        </div>
+
+        <div class="inputFlex">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="input-field" name="password" placeholder="azerty1234" required />
+          <!-- <?php
+                if (isset($errorMessage)) {
+                    echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                }
+            ?> -->
+        </div>
+        <div>
+          <a href="home.html"><button type="submit">Log In</button></a>
+        </div>
+      </form>
+
+      <img class="logoTurboTickets" src="/assets/logoTurboTickets.svg" alt="Logo TurboTickets">
+    </div>
+    
+</div>
+  </body>
+</html>

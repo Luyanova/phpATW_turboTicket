@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/home.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <title>User details</title>
+  </head>
+  <body>
+
+<!-- ---------------------Navbar-------------------------------------------------- -->
+
+
+<nav id="navbar">
+  <div class="menuNav flexCol gap-48">
+    <a href="home.html"><img src="/assets/logoTexteTurboTickets.svg" alt="" srcset="" class="logoTexteTurboTickets"></a>
+  <div class="listNav flexCol gap-16">
+    <a href="profile.html"><p style="color: #DDE1E5">Profile</p></a>
+    <a href="participation.html"><p style="color: #DDE1E5">My participation</p></a>
+    <a href="askForAssistance.html"><p style="color: #DDE1E5">Ask for assistance</p></a>
+
+    <!-- for admin only -->
+
+    <a href="allUsers.html"><p style="color: #5B68E8">All Users</p></a>
+    <a href="allUsersRequiringAssistance.html"><p style="color: #5B68E8">Users who need help</p></a>
+    <a href="createEvent.html"><p style="color: #5B68E8">Create event</p></a>
+
+  </div>
+
+  <div class="flex gap-8">
+    <img  src="/assets/iconExit.svg" alt="">
+    <p style="color: #DDE1E5">Logout</p>
+  </div>
+
+  </div>
+</nav>
+
+
+
+<div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+  <img class="iconBurger active" src="/assets/iconBurger.svg" alt="icon" id="iconBurger">
+  <img class="iconCross" src="/assets/iconCross.svg" alt="icon" id="iconCross">
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- --------------------------------------notification--------------------------------- -->
+
+<div id="containerNotification" class="containerNotification">
+  
+</div>
+
+<div id="notification1" class="notification1 flexCol alCenter gap-16 p-24 borderRadius-12">
+  <p style="text-align: center;">Are you sure ?</p>
+  <div class="flex  gap-24">
+    <button type="submit" id="yes1">Yes</button>
+    <button type="submit" id="no1" class="secondaryButton">No</button>
+  </div>
+</div>
+
+<div id="notification2" class="notification2 flexCol alCenter gap-16 p-24 borderRadius-12">
+  <p style="text-align: center;">Would you like to delete the user ?</p>
+  <div class="flex  gap-24">
+    <a href="allUsers.html">
+    <button type="submit" id="yes1">Yes</button>
+  </a>
+    <button type="submit" id="no2" class="secondaryButton">No</button>
+  </div>
+</div>
+
+<!-- -------------------------------------------------------------------- -->
+
+
+    <div class="container">
+      <div class="wrap gap-16">
+
+
+
+<!-- -------------------------------------------Head---------------------------- -->
+        <div class="flexCol gap-8 pTop-64">
+          <h3>User details</h3>
+
+        </div>
+
+        <div class="w100 bgGrey-700" style="height: 2px"></div>
+       
+
+<!-- -----------------------------------Card------------------------------------ -->
+
+<ul>
+  <li class="list flex alCenter juSpace bgGrey-100" style="height: 55px;">$User_name</li>
+  <li class="list flex alCenter juSpace bgGrey-100" style="height: 55px;">$User_email</li>
+  <li class="list flex alCenter juSpace bgGrey-100" style="height: 55px;">$User_birth</li>
+</ul>
+
+
+
+
+
+<!-- -------------------------------------------Head---------------------------- -->
+<div class="flexCol gap-8 pTop-64">
+  <h3>User participations</h3>
+
+</div>
+
+<div class="w100 bgGrey-700" style="height: 2px"></div>
+
+
+<!-- -----------------------------------Card------------------------------------ -->
+
+<ul>
+  <li class="list flex alCenter juSpace bgGrey-100" ">$User_event1 <button type="submit"  class="secondaryButton">Delete</button></li>
+  <li class="list flex alCenter juSpace bgGrey-100" ">$User_event2 <button type="submit"  class="secondaryButton">Delete</button></li>
+  <li class="list flex alCenter juSpace bgGrey-100" ">$User_event3 <button type="submit"  class="secondaryButton">Delete</button></li>
+</ul>
+
+
+
+<!-- <div class="errorNoCard flex juCenter alCenter">
+<h4 style="color: #83898D;">No event</h4>
+</div> -->
+
+<div>
+<button type="submit" id="buttonDeleteUserEvent" class="secondaryButton">Delete all participations</button>
+</div>
+
+<!-- ----------------------------------------------Pagination------------------------- -->
+
+
+
+
+        
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/notification.js"></script>
+  </body>
+</html>

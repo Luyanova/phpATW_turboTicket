@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/login.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile Turbo Ticket</title>
+  </head>
+  <body>
+
+
+    <!-- ---------------------Navbar-------------------------------------------------- -->
+
+
+<nav id="navbar">
+  <div class="menuNav flexCol gap-48">
+    <a href="home.html"><img src="/assets/logoTexteTurboTickets.svg" alt="" srcset="" class="logoTexteTurboTickets"></a>
+  <div class="listNav flexCol gap-16">
+    <a href="profile.html"><p style="color: #DDE1E5">Profile</p></a>
+    <a href="participation.html"><p style="color: #DDE1E5">My participation</p></a>
+    <a href="askForAssistance.html"><p style="color: #DDE1E5">Ask for assistance</p></a>
+
+    <!-- for admin only -->
+
+    <a href="allUsers.html"><p style="color: #5B68E8">All Users</p></a>
+    <a href="allUsersRequiringAssistance.html"><p style="color: #5B68E8">Users who need help</p></a>
+    <a href="createEvent.html"><p style="color: #5B68E8">Create event</p></a>
+
+  </div>
+
+  <div class="flex gap-8">
+    <img  src="/assets/iconExit.svg" alt="">
+    <p style="color: #DDE1E5">Logout</p>
+  </div>
+
+  </div>
+</nav>
+
+
+
+<div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+  <img class="iconBurger active" src="/assets/iconBurger.svg" alt="icon" id="iconBurger">
+  <img class="iconCross" src="/assets/iconCross.svg" alt="icon" id="iconCross">
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <div class="container">
+    <div class="wrap gap-48">
+      <h3>Profile</h3>
+
+      <form action="/profile" method="post" class="flexCol w100 gap-32">
+        <div class="inputFlex">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" class="input-field" name="firstName" placeholder="John" required />
+          <!-- <?php
+                if (isset($errorMessage)) {
+                    echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                }
+            ?> -->
+        </div>
+
+        <div class="inputFlex">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" class="input-field" name="lastName" placeholder="Doe" required />
+          <!-- <?php
+                if (isset($errorMessage)) {
+                    echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                }
+            ?> -->
+        </div>
+
+        <div class="inputFlex">
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input type="date" id="dateOfBirth" class="input-field" name="dateOfBirth" placeholder="dd/mm/yyyy" required />
+            <!-- <?php
+                  if (isset($errorMessage)) {
+                      echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                  }
+              ?> -->
+          </div>
+
+          <form action="/login" method="post">
+            <div class="inputFlex">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="input-field" name="email" placeholder="exemple@email.com" required />
+              <!-- <?php
+                    if (isset($errorMessage)) {
+                        echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                    }
+                ?> -->
+            </div>
+
+          <div class="inputFlex">
+            <label for="password">Current password</label>
+            <input type="password" id="password" class="input-field" name="password" placeholder="azerty1234" required />
+            <!-- <?php
+                  if (isset($errorMessage)) {
+                      echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                  }
+              ?> -->
+          </div>
+
+          <div class="inputFlex">
+            <label for="password">New password</label>
+            <input type="password" id="password" class="input-field" name="password" placeholder="azerty1234" required />
+            <!-- <?php
+                  if (isset($errorMessage)) {
+                      echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                  }
+              ?> -->
+          </div>
+
+
+
+
+        <div>
+          <a href="home.html"><button type="submit">Change Informations</button></a>
+        </div>
+      </form>
+
+      
+    </div>
+    
+</div>
+
+
+
+
+<script src="javascript/navbar.js"></script>
+
+  </body>
+</html>

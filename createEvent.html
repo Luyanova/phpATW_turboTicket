@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/login.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create event</title>
+  </head>
+  <body>
+
+    <!-- ---------------------Navbar-------------------------------------------------- -->
+
+
+<nav id="navbar">
+  <div class="menuNav flexCol gap-48">
+    <a href="home.html"><img src="/assets/logoTexteTurboTickets.svg" alt="" srcset="" class="logoTexteTurboTickets"></a>
+  <div class="listNav flexCol gap-16">
+    <a href=""><p style="color: #DDE1E5">Profile</p></a>
+    <a href=""><p style="color: #DDE1E5">My participation</p></a>
+    <a href=""><p style="color: #DDE1E5">Ask for assistance</p></a>
+
+    <!-- for admin only -->
+
+    <a href=""><p style="color: #5B68E8">All Users</p></a>
+    <a href=""><p style="color: #5B68E8">Users who need help</p></a>
+    <a href=""><p style="color: #5B68E8">Create event</p></a>
+
+  </div>
+
+  <div class="flex gap-8">
+    <img  src="/assets/iconExit.svg" alt="">
+    <p style="color: #DDE1E5">Logout</p>
+  </div>
+
+  </div>
+</nav>
+
+
+
+<div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+  <img class="iconBurger active" src="/assets/iconBurger.svg" alt="icon" id="iconBurger">
+  <img class="iconCross" src="/assets/iconCross.svg" alt="icon" id="iconCross">
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <div class="container">
+    <div class="wrap gap-48">
+
+        
+      <h3>Create event</h3>
+
+      <form action="/modifyEvent" method="post" class="flexCol w100 gap-32">
+
+        <div class="inputFlex">
+    <label for="eventName">Event Name</label>
+    <input type="text" id="eventName" class="input-field" name="eventName" placeholder="Event Name" required />
+
+     <!-- <?php
+                if (isset($errorMessage)) {
+                    echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+                }
+            ?> -->
+</div>
+
+<div class="inputFlex">
+  <label for="date">Date</label>
+  <input type="date" id="date" class="input-field" name="date" placeholder="dd/mm/yyyy" required />
+  <!-- <?php
+        if (isset($errorMessage)) {
+            echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+        }
+    ?> -->
+</div>
+
+
+<div class="inputFlex">
+  <label for="lastRegistrationDate">Last registration date</label>
+  <input type="date" id="lastRegistrationDate" class="input-field" name="lastRegistrationDate" placeholder="dd/mm/yyyy" required />
+  <!-- <?php
+        if (isset($errorMessage)) {
+            echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+        }
+    ?> -->
+</div>
+
+
+<div class="inputFlex">
+  <label for="maxNumberParticipation">Max number of participation</label>
+  <input type="number" id="maxNumberParticipation" class="input-field" name="maxNumberParticipation" placeholder="1234" required />
+
+  <!-- <?php
+      if (isset($errorMessage)) {
+          echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+      }
+  ?> -->
+</div>
+
+
+  <div class="inputFlex">
+    <label for="place">Place</label>
+    <input type="place" id="place" class="input-field" name="place" placeholder="Porto..." required />
+    <!-- <?php
+          if (isset($errorMessage)) {
+              echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+          }
+      ?> -->
+  </div>
+
+  <div class="inputFlex">
+    <label for="desription">Description</label>
+    <textarea id="desription" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." rows="5" cols="33" required></textarea>
+
+    <!-- <?php
+        if (isset($errorMessage)) {
+            echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+        }
+    ?> -->
+</div>
+
+<div class="inputFlex">
+  <label for="coverImage">Cover Image</label>
+  <input type="file" id="coverImage"  class="input-field" name="coverImage" placeholder="coverImage" required />
+
+  <!-- <?php
+      if (isset($errorMessage)) {
+          echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+      }
+  ?> -->
+</div>  
+
+<div class="inputFlex">
+
+  <label for="types">Type</label>
+      <select name="types" id="types">
+      <option style="display: none;" value="" disabled selected>Choose an option</option>
+      <option value="Car">Car</option>
+      <option value="Kart">Kart</option>
+
+      </select>
+      <!-- <?php
+      if (isset($errorMessage)) {
+          echo '<p style="color: #E22525;">' . $errorMessage . '</p>';
+      }
+  ?> -->
+  </div>
+
+  <div>
+    <a href="home.html"><button type="submit">Create event</button></a>
+  </div>
+
+</form>
+          
+    </div>
+    
+</div>
+
+
+<script src="javascript/navbar.js"></script>
+
+  </body>
+</html>

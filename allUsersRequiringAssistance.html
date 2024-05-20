@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/home.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/styleGuide.css" />
+
+    <title>All users requiring assistance</title>
+  </head>
+  <body>
+
+<!-- ---------------------Navbar-------------------------------------------------- -->
+
+
+<nav id="navbar">
+  <div class="menuNav flexCol gap-48">
+    <a href="home.html"><img src="/assets/logoTexteTurboTickets.svg" alt="" srcset="" class="logoTexteTurboTickets"></a>
+  <div class="listNav flexCol gap-16">
+    <a href="profile.html"><p style="color: #DDE1E5">Profile</p></a>
+    <a href="participation.html"><p style="color: #DDE1E5">My participation</p></a>
+    <a href="askForAssistance.html"><p style="color: #DDE1E5">Ask for assistance</p></a>
+
+    <!-- for admin only -->
+
+    <a href="allUsers.html"><p style="color: #5B68E8">All Users</p></a>
+    <a href="allUsersRequiringAssistance.html"><p style="color: #5B68E8">Users who need help</p></a>
+    <a href="createEvent.html"><p style="color: #5B68E8">Create event</p></a>
+
+  </div>
+
+  <div class="flex gap-8">
+    <img  src="/assets/iconExit.svg" alt="">
+    <p style="color: #DDE1E5">Logout</p>
+  </div>
+
+  </div>
+</nav>
+
+
+
+<div class="burgerButton flex alCenter juCenter active" id="burgerButton">
+  <img class="iconBurger active" src="/assets/iconBurger.svg" alt="icon" id="iconBurger">
+  <img class="iconCross" src="/assets/iconCross.svg" alt="icon" id="iconCross">
+</div>
+
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+
+    <div class="container">
+      <div class="wrap gap-16">
+
+
+
+        <!-- -------------------------------------------Head---------------------------- -->
+        <div class="flexCol gap-8 pTop-64">
+          <h3>All users requiring assistance</h3>
+
+        </div>
+        
+        <div class="w100 bgGrey-700" style="height: 2px"></div>
+        <!-- --------------------------------------Filter Search--------------------------------- -->
+
+
+
+
+
+        <div class="flex gap-16 filterOverflow" style="position: relative;" id="filterOverflow">
+            <div class="search">
+                <div class="iconSearch"></div>
+                <div class="inputSearchbar">
+                    <input type="text" placeholder="Search" id="mysearch" class="inputSearch">
+                </div>
+        
+                <span class="clear" onclick="document.getElementById('mysearch').value = ''">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                        <rect x="0.135742" y="10.7427" width="15" height="3" transform="rotate(-45 0.135742 10.7427)" fill="#83898D"/>
+                        <rect x="2.25684" y="0.135986" width="15" height="3" transform="rotate(45 2.25684 0.135986)" fill="#83898D"/>
+                      </svg>
+                </span>
+            </div>
+        
+        
+
+           
+
+        </div>
+
+<!-- -----------------------------------Card------------------------------------ -->
+
+<ul>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User1_name <button type="submit">View more</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User2_name <button type="submit">View more</button></li>
+    <li class="list flex alCenter juSpace bgGrey-100" ">$User3_name <button type="submit">View more</button></li>
+</ul>
+
+
+<!-- <div class="errorNoCard flex juCenter alCenter">
+  <h4 style="color: #83898D;">No user</h4>
+</div> -->
+
+<!-- ----------------------------------------------Pagination------------------------- -->
+
+
+
+
+        
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="javascript/searchbar.js"></script>
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/filter.js"></script>
+  </body>
+</html>
